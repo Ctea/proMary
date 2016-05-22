@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" ng-controller="MainController">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }} | White2</title>
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <!-- bootstrap-social -->
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css" />
+    
+    <!-- animate.css -->
+    <!--<link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />-->
+    
+    <!-- angular slick -->
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+    
+    <!-- bootstrap custom theem -->
+    <link rel="stylesheet" href="css/bootstrap-freelancer.css">
+    
+    <!-- my style -->
+    <link rel="stylesheet" href="css/my-angular-animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div ng-include src="templates.nav"></div>
+    
+    <div class="wrapper" ui-view></div>
+    
+    <div ng-include src="templates.footer"></div>
+    
+    <!-- SystemJs -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    
+    <!-- Jquery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Firebase -->
+    <script src="bower_components/firebase/firebase.js"></script>
+    
+    <!-- Angular -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="bower_components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js"></script>
+    
+    <!-- angular slick -->
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/angular-slick/dist/slick.min.js"></script>
+    
+    <script>
+        System.config({
+            baseURL: '/'
+        });
+        System.import('modules/app.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--<img class="img-responsive img-rounded" src="img/fantasy.jpg">-->
+                <div class="intro-text">
+                    <div class="intro-message">
+                        <!--<h1>清明上河圖特展</h1>-->
+                        <!--<h3>北部院區 展覽區 - 210</h3>-->
+                        <!--<h3>2016/04/02~2016/06/26</h3>-->
+                        <!--<hr class="intro-divider"></hr>-->
+                        <!--<ul class="list-inline intro-social-buttons">-->
+                        <!--    <li>-->
+                        <!--        <a smooth-scroll href="" target="about" class="btn btn-default btn-lg">-->
+                        <!--            <i class="fa fa-info-circle"></i>-->
+                        <!--            <span>展覽概述</span>-->
+                        <!--        </a>-->
+                        <!--    </li>-->
+                        <!--    <li>-->
+                        <!--        <a smooth-scroll href="" target="about-items" class="btn btn-default btn-lg">-->
+                        <!--            <i class="fa fa-info-circle"></i>-->
+                        <!--            <span>展件介紹</span>-->
+                        <!--        </a>-->
+                        <!--    </li>-->
+                        <!--    <li>-->
+                        <!--        <a href="https://github.com/xiaoming87" class="btn btn-default btn-lg">-->
+                        <!--            <i class="fa fa-shopping-basket"></i>-->
+                        <!--            <span>購物專區</span>-->
+                        <!--        </a>-->
+                        <!--    </li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- production -->
+
+<section id="production">
+    <div class="container-fluid">
+        <div class="row" style="padding-bottom: 15px;">
+            <div class="col-md-12 text-center">
+                <div style="font-size:26px;letter-spacing: 7px;">產品介紹</div>
+                <div style="font-size:18px; color:#808080; letter-spacing: 5px;">Products</div>
+            </div>
+        </div>
+        <div class="products">
+            <uib-carousel active="0">
+                <uib-slide ng-repeat="product in products track by product.id" index="product.id">
+                    <img ng-src="{{ product.img }}" 
+                         style="margin:auto;cursor:pointer;" 
+                         class="img-responsive product-img"
+                         ng-click="openProductModal('lg', product)">
+                    <div class="carousel-caption">
+                        <h4>商品 {{ product.id + 1 }}</h4>
+                    </div>
+                </uib-slide>
+            </uib-carousel>
+        </div>
+        <div class="row" style="position:relative">
+            <!--<button class="slick-prev-button" style="left:0px;font-size:40px;">-->
+            <!--        <span class="glyphicon glyphicon-chevron-left"></span>-->
+            <!--</button>-->
+            
+            <!--<slick dots="{{ slick.dots }}"-->
+            <!--        slides-to-show="{{ slick.slidesToShow }}"-->
+            <!--        slides-to-scroll="{{ slick.slidesToScroll }}"-->
+            <!--        speed="{{ slick.speed }}"-->
+            <!--        infinite="{{ slick.infinite }}"-->
+            <!--        touch-move="{{ slick.touchMove }}"-->
+            <!--        arrows="{{ slick.arrows }}"-->
+            <!--        center-mode="{{ slick.centerMode }}"-->
+            <!--        center-padding="{{ slick.centerPadding }}"-->
+            <!--        responsive="slick.responsive"-->
+            <!--        prev-arrow=".slick-prev-button" -->
+            <!--        next-arrow=".slick-next-button" -->
+            <!--        autoplay="true"-->
+            <!--        >-->
+                
+                <!--<div class="text-center" ng-repeat="i in range(0, 10)">-->
+                <!--    <img data-lazy="img/product/PY{{ setImg.src+ i }}.jpg" style="height:150px" class="center-block img-responsive">-->
+                <!--    <h4>產品{{ i+1 }} </h4>-->
+                <!--</div>-->
+            <!--    <div class="text-center" ng-repeat="product in products">-->
+                    <!--<img ng-src="{{ product.img }}" class="hidden-lg hidden-md" class="center-block img-responsive">-->
+            <!--        <img ng-src="{{ product.img }}" class="hidden-xs hidden-sm" height="100"  class="center-block">-->
+                    <!--<h4>產品</h4>-->
+            <!--    </div>-->
+            <!--</slick>-->
+            
+            
+            
+            <!--<button class="slick-next-button" style="right:0px;font-size:40px;">-->
+            <!--    <span class="glyphicon glyphicon-chevron-right"></span>-->
+            <!--</button>-->
+        </div>
+        
+    </div>
+</section>
+
+<!-- production -->
+<!-- aboutme -->
+
+
+
+<section id="aboutme">
+    <div class="container" >
+        <div class="row" >
+            <div class="col-md-12 text-center">
+                <div style="font-size:26px;letter-spacing: 15px;">關於我們</div>
+                <div style="font-size:18px;color:#F5F5F5;letter-spacing: 3px;padding-bottom:0px">About Marypoa</div>
+            </div>
+        </div>
+        <hr style="width: 60%; margin-top:10px">
+        <div class="row">
+            <div class="col-md-4 text-center" >
+     
+            </div>
+            <div class="col-md-8 text-center">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- aboutme -->

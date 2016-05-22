@@ -1,0 +1,181 @@
+
+$nav-bg: #0B243B !important;
+// $header-bg: url(http://theme.npm.edu.tw/exh105/RiverQingming/common/images/mainGraphicBG.jpg) no-repeat center;
+$header-bg: #18bc9c;
+$section-bg: #E9848D;//#FAEBD7;
+$footer-bg: #0B243B !important;
+
+$wrapper-margin-top: 70px;
+$wrapper-sm-margin-top: 40px;
+
+// =========== carousel
+
+.carousel-indicators li { display:none; }
+
+// =========== carousel =============/
+
+.slick-next-button, .slick-prev-button {
+    
+    font-size: 0;
+    line-height: 0;
+    
+    display:block;
+    
+    position: absolute;
+    top: 50%;
+
+    width: 40px;
+    height: 40px;
+    margin-top: -40px;
+    padding: 0px;
+
+    cursor: pointer;
+    
+    border: none;
+    outline: none;
+    background: none; 
+    
+    z-index: 1;
+}
+
+.slick-next-button:hover, .slick-prev-button:hover {
+    color: blue;
+}
+
+.no-margin {
+    margin: 0px;
+}
+.no-padding {
+    padding: 0px;
+}
+
+.wrapper {
+    margin-top: $wrapper-sm-margin-top;
+}
+
+@media (min-width: 768px) {
+   .wrapper {
+        margin-top: $wrapper-margin-top;
+    } 
+}
+
+nav {
+    background: $nav-bg;
+}
+
+header {
+    background: $header-bg;
+    // height: 550px;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    section {
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+}
+
+section:nth-child(odd) {
+    background: $section-bg;
+    color: #FFFFFF ;
+}
+
+body, section, div, p, h1, h2, h3, h4, h5{
+    font-family: '微軟正黑體' !important;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+// navbar brand
+
+
+@media(max-width:767px) {
+    
+    .navbar-brand {
+        width: 101px;
+        height: 121px;
+        padding: 0px; /* firefox bug fix */
+        // background: url(../img/LOGO.jpg) no-repeat;
+        position: absolute;
+        top: -130px;
+    }
+    .navbar-brand img {
+       width: 145px;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-brand {
+        margin-top: -15px !important;
+        left: 40px;
+        width: 101px;
+        height: 120px;
+        padding: 0px; /* firefox bug fix */
+        // background: url(../img/LOGO.jpg) no-repeat;
+        position: absolute;
+        -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.30);
+    }
+    .navbar-brand > img {
+        width: 101px;
+        
+    }
+}
+
+
+// bootstrap custom: http://blackrockdigital.github.io/startbootstrap-landing-page/css/landing-page.css
+.intro-message {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}

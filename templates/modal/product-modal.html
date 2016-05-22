@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <h3 class="modal-title">產品詳細</h3>
+</div>
+<div class="modal-body row">
+    <div class="col-md-12">
+        <img src="{{ product.img }}" class="img-responsive center-block"></img>
+    </div>
+    <div class="col-md-12">
+        {{ product.name }}
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-warning btn-block" type="button" ng-click="cancel()">關閉</button>
+</div>
